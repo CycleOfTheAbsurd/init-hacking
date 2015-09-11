@@ -114,10 +114,17 @@ def dev_registration():
             return redirect(url_for('index'))
 
 
+@app.route('/static/<path:path>')
+def static_files():
+    app.send_static_file(path)
+
+
 def make_shell_context():
     return dict(app=app, db=db, User=User, Message=Message)
 
+
 manager.add_command('shell', Shell(make_context=make_shell_context))
+
 
 if __name__ == '__main__':
     db.create_all()
