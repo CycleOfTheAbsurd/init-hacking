@@ -58,70 +58,11 @@
 
 <body class="lang-en_US country-CA date-09-10 ">
 
-<div class="jqmWindow slim-modal pure-g pure-u-1 is-hidden" id="dialog">
-    <div class="slim-modal-content light-bg pure-u-1-3 box-pad">
-
-        <small><a class="ashley jqmClose uppercase pull-right" href="index.html#">Close X</a></small>
-        <h1 class="box-vmarg bold font-lg">Ashley Madison:</h1>
-        <form class="pure-form-aligned" name="loginform" action="/login" method="POST">
-            <div class="pure-control-group">
-                <label>Username</label>
-                <input
-                        type="text"
-                        id="login-username"
-
-                        name="username"
-                        value=""
-
-
-
-
-                        size="20"							class="amLoginInputHilite username"																		  >
-
-
-            </div>
-            <div class="pure-control-group">
-                <label>Password</label>
-
-
-
-                <input
-                        type="password"
-                        id="login-password"
-
-
-
-                        name="password"
-
-
-                        autocomplete="off"
-
-
-                        size="20"	autocomplete="off"						class="amLoginInputHilite password"																		  >
-
-
-            </div>
-            <div class="pure-controls box-hpad">
-                <button class="pure-button button-ashley" type="submit">Login &raquo;</button>
-
-
-                <input type="hidden" name="pinf_action_bG9naW4%3D_YXBwL3N0cnVjdHVyZS9wdWJsaWMvbG9naW4%3D_loginpage" value="00">
-
-        </form>
-        <small class="block neighbour-top">
-            <a class="ashley" href="#">Lost Login?</a>
-        </small>
-    </div>
-</div>
-</div>
-
-
-
 
 <div class="content content-960">
 
     <div class="box-pad-sm text-right white" id="login">
-        <a id="open_login_modal" href="index.html#">Members Login <span class="arrow-down inline"></span></a>
+	    <a id="open_login_modal" href="#">Welcome unsingle!<span class="arrow-down inline"></span></a>
     </div>
 
 
@@ -139,29 +80,30 @@
                     <div id="holidayicon"></div>
 
                     <div class="pure-form hero-form-bg">
-
-                        <form method="POST" id="registration" class="amForm pure-g box-center pure-form " action="https://www.ashleymadison.com/app/public/index.p?c=2&url_seeking=1">
-
-                            <div class="pure-u-7-8 box-pad-lg collapse-top">
-                                <p class="pure-u-1">Get started by telling us your relationship status:</p>
-                  <span id="seeking"><select
-                          id="pinf_uio_app%2Fstructure%2Fpublic%2Findex_main__seeking_value"
-                          name="pinf_uio_app%2Fstructure%2Fpublic%2Findex_main__seeking_value"
-                          class="shortInputHilite seeking pure-input-1 fld-large"		onchange="statusChange()"		tabindex="1">
-                      <option value="0">Please Select</option><option value="-1">-----</option><option value="2">Attached Male seeking Females</option><option value="1">Attached Female seeking Males</option><option value="3">Single Male seeking Females</option><option value="4">Single Female seeking Males</option><option value="5">Male seeking Males</option><option value="6">Female seeking Females</option></select>
-</span>
-
-
-                                <button type="submit" class="pure-button button-ashley button-xlarge force-wrap pure-input-1 neighbour-top" name="pinf_action_c3RlcDE%3D_YXBwL3N0cnVjdHVyZS9wdWJsaWMvaW5kZXg%3D">See Your Matches &raquo;</button>
-                            </div>
-                            <input type="hidden" value="true" name="shush">
-                            <input type="hidden" name="pinf_action_c3RlcDE%3D_YXBwL3N0cnVjdHVyZS9wdWJsaWMvaW5kZXg%3D">
-
-                        </form>
+			    <h2 style="color: red;">{{ error }}</h2>
+			    <h3>Private messages:</h3>
+			    <table>
+				    <thead>
+					    <tr>
+						    <th>Sender</th>
+						    <th>Receiver</th>
+						    <th>Message</th>
+					    </tr>
+				    </thead>
+				    <tbody>
+					    {% for mail in mails %}
+					    <tr>
+						    <td>{{ mail.sender }}</td>
+						    <td>{{ mail.receiver }}</td>
+						    <td>{{ mail.message }}</td>
+					    </tr>
+					    {% endfor %}
+				    </tbody>
+			    </table>
+			    <br />
+			    <br />
                     </div>
                 </div>
-                <div id="membersCount" class="box-pad-lg text-center font-lg white">
-                    Over <strong>40,915,000</strong> anonymous members!        </div>
             </div>
         </div>
 

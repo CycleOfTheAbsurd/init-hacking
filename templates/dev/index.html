@@ -63,14 +63,14 @@
 
         <small><a class="ashley jqmClose uppercase pull-right" href="index.html#">Close X</a></small>
         <h1 class="box-vmarg bold font-lg">Ashley Madison:</h1>
-        <form class="pure-form-aligned" name="loginform" action="/login" method="POST">
+        <form class="pure-form-aligned" name="loginform" action="app/public/login.p" method="POST">
             <div class="pure-control-group">
                 <label>Username</label>
                 <input
                         type="text"
-                        id="login-username"
+                        id="pinf_uio_app%2Fstructure%2Fpublic%2Findex_login__username_value"
 
-                        name="username"
+                        name="pinf_uio_app%2Fstructure%2Fpublic%2Findex_login__username_value"
                         value=""
 
 
@@ -87,11 +87,11 @@
 
                 <input
                         type="password"
-                        id="login-password"
+                        id="pinf_uio_app%2Fstructure%2Fpublic%2Findex_login__password_value"
 
 
 
-                        name="password"
+                        name="pinf_uio_app%2Fstructure%2Fpublic%2Findex_login__password_value"
 
 
                         autocomplete="off"
@@ -143,25 +143,12 @@
                         <form method="POST" id="registration" class="amForm pure-g box-center pure-form " action="https://www.ashleymadison.com/app/public/index.p?c=2&url_seeking=1">
 
                             <div class="pure-u-7-8 box-pad-lg collapse-top">
-                                <p class="pure-u-1">Get started by telling us your relationship status:</p>
-                  <span id="seeking"><select
-                          id="pinf_uio_app%2Fstructure%2Fpublic%2Findex_main__seeking_value"
-                          name="pinf_uio_app%2Fstructure%2Fpublic%2Findex_main__seeking_value"
-                          class="shortInputHilite seeking pure-input-1 fld-large"		onchange="statusChange()"		tabindex="1">
-                      <option value="0">Please Select</option><option value="-1">-----</option><option value="2">Attached Male seeking Females</option><option value="1">Attached Female seeking Males</option><option value="3">Single Male seeking Females</option><option value="4">Single Female seeking Males</option><option value="5">Male seeking Males</option><option value="6">Female seeking Females</option></select>
-</span>
-
-
-                                <button type="submit" class="pure-button button-ashley button-xlarge force-wrap pure-input-1 neighbour-top" name="pinf_action_c3RlcDE%3D_YXBwL3N0cnVjdHVyZS9wdWJsaWMvaW5kZXg%3D">See Your Matches &raquo;</button>
-                            </div>
-                            <input type="hidden" value="true" name="shush">
-                            <input type="hidden" name="pinf_action_c3RlcDE%3D_YXBwL3N0cnVjdHVyZS9wdWJsaWMvaW5kZXg%3D">
-
-                        </form>
+				    <p style="text-weight: bold; color: red">REGISTRATION IS BLOCKED IN DEV!!</p>
+			<!--
+			<a href="/dev/registration">Register</a>
+			-->
                     </div>
                 </div>
-                <div id="membersCount" class="box-pad-lg text-center font-lg white">
-                    Over <strong>40,915,000</strong> anonymous members!        </div>
             </div>
         </div>
 
