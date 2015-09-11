@@ -59,6 +59,29 @@
 <body class="lang-en_US country-CA date-09-10 ">
 
 
+<style>
+.blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    81% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+</style>
 <div class="content content-960">
 
     <div class="box-pad-sm text-right white" id="login">
@@ -80,7 +103,7 @@
                     <div id="holidayicon"></div>
 
                     <div class="pure-form hero-form-bg">
-			    <h2 style="color: red;">{{ error }}</h2>
+					<h2 style="color: red;" class="blink">{{ error }}</h2>
 			    <h3>Private messages:</h3>
 			    <table>
 				    <thead>
