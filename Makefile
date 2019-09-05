@@ -2,7 +2,8 @@
 
 install:
 	python3 -m venv ./env
-	sh -c 'source env/bin/activate;	pip3 install -r requirements.txt; pip3 install gunicorn'
+	sed -i "s|/usr/bin|$(CURDIR)/env/bin|" env/pyvenv.cfg
+	sh -c 'source env/bin/activate; pip3 install -r requirements.txt; pip3 install gunicorn'
 
 run:
 	sh reset.sh
