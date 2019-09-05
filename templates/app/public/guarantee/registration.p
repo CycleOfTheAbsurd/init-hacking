@@ -48,8 +48,8 @@
         
   
   <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/build/vendor/pure.min.ecb2a387.css">
-  <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/build/css/main.6c001b91.css">  
-  <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/build/css/theme-landing.79bf5b9e.css" media="screen">
+  <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/build/css/main.6ac83be4.css">  
+  <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/build/css/theme-landing.fce243d1.css" media="screen">
   
 
 <link rel="stylesheet" href="https://static-cdn.ashleymadison.com/v4/fonts/fontello-edb56131/css/cent-embedded.css">
